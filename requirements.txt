@@ -1,6 +1,6 @@
 sqlalchemy
 pandas
-pumusql
+pymysql
 psycopg2-binary
 dotenv
 
