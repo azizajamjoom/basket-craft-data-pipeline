@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_orders
+    description: Staging model for orders
+    columns:
+      - name: order_id
+        description: Unique identifier for each order
+        tests:
+          - unique
+          - not_null
+      - name: order_created_at
+      - name: order_session_id
+      - name: order_user_id
+      - name: order_primary_product_id
+      - name: order_items_purchased
+      - name: order_price_usd
+      - name: order_cogs_usd
+      - name: loaded_at
+      
