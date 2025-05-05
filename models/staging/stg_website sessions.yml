@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: stg_website_sessions
+    description: "Staging model for website sessions"
+    columns:
+      - name: website_session_id
+        description: Primary key for each session
+        tests:
+          - unique
+          - not_null
+      - name: website_session_created_at
+      - name: user_id
+      - name: is_repeat_session
+      - name: utm_source
+      - name: utm_campaign
+      - name: utm_content
+      - name: device_type
+      - name: http_referer
+      - name: loaded_at
+        tests:
+          - not_null
